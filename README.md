@@ -1,36 +1,182 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Build a Full-Stack Inventory Management System with Next.js & Stack Auth
 
-## Getting Started
+<div align="center">
+<br />
+<a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">
+<img src="./banner.png" alt="Inventory Management System Banner">
+</a>
+<br />
+<div>
+<img src="https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+<img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+<img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS" />
+<img src="https://img.shields.io/badge/-Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma" />
+<img src="https://img.shields.io/badge/-PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/-Stack Auth-FF6B6B?style=for-the-badge&logo=stackauth&logoColor=white" alt="Stack Auth" />
+<img src="https://img.shields.io/badge/-Lucide Icons-FD4D4D?style=for-the-badge&logo=lucide" alt="Lucide Icons" />
+</div>
+<h3 align="center">Create a Complete Inventory Management System with Authentication, Dashboard Analytics, and CRUD Operations</h3>
+<div align="center">
+Follow the full video tutorial on <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank"><b>YouTube</b></a>
+</div>
+<br />
+</div>
 
-First, run the development server:
+## 📋 Table of Contents
+
+1. [Introduction](#-introduction)
+2. [Tech Stack](#-tech-stack)
+3. [Features](#-features)
+4. [Quick Start](#-quick-start)
+5. [Screenshots](#-screenshots)
+6. [Deployment](#-deployment)
+7. [Course & Channel](#-course--channel)
+
+---
+
+## 🚀 Introduction
+
+In this comprehensive tutorial, you'll learn how to build a complete **inventory management system** using **Next.js 15**, **Stack Auth**, **Prisma**, and **PostgreSQL**. From user authentication to dashboard analytics, product management, and real-time inventory tracking—this video walks you through every step of building a production-ready full-stack application.
+
+Perfect for developers looking to master modern web development, learn full-stack architecture, or build their own business management tools.
+
+🎥 **Watch the full tutorial**: [YouTube](https://youtu.be/YOUR_VIDEO_ID)
+
+---
+
+## ⚙️ Tech Stack
+
+- **Next.js 15** – React framework with App Router and Server Components
+- **React 19** – Component-based UI development with latest features
+- **TailwindCSS** – Utility-first CSS for modern styling
+- **Stack Auth** – Modern authentication solution (replaces NextAuth.js)
+- **Prisma** – Type-safe database ORM with migrations
+- **PostgreSQL** – Robust relational database
+- **Lucide Icons** – Clean and beautiful icon pack
+- **Recharts** – Data visualization for analytics
+- **TypeScript** – Type safety and enhanced developer experience
+- **Vercel** – Deployment and hosting platform
+
+---
+
+## ⚡️ Features
+
+- 🔐 **Modern Authentication** - Secure user registration and login with Stack Auth
+- 📊 **Dashboard Analytics** - Real-time metrics, charts, and inventory insights
+- 📦 **Product Management** - Complete CRUD operations for inventory items
+- 🔍 **Search & Filtering** - Find products quickly with search functionality
+- 📄 **Pagination** - Efficient data loading for large inventories
+- ⚠️ **Low Stock Alerts** - Automated notifications for inventory levels
+- 💰 **Value Tracking** - Monitor total inventory value and financial metrics
+- 📈 **Visual Analytics** - Interactive charts showing inventory trends
+- 📱 **Responsive Design** - Works perfectly on desktop and mobile devices
+- 🎨 **Modern UI** - Clean, professional interface with TailwindCSS
+- 🚀 **Server Actions** - Form handling with Next.js Server Actions
+- 🔄 **Real-time Updates** - Instant UI updates after data changes
+
+---
+
+## 👌 Quick Start
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Git](https://git-scm.com/)
+- [PostgreSQL Database](https://www.postgresql.org/) (or use Neon for cloud hosting)
+
+### Clone and Run
+
+```bash
+git clone https://github.com/yourusername/nextjs-fullstack-inventory.git
+cd nextjs-fullstack-inventory
+npm install
+```
+
+### Environment Setup
+
+1. Create a `.env.local` file in the root directory:
+
+```env
+DATABASE_URL="postgresql://username:password@localhost:5432/inventory_db"
+NEXT_PUBLIC_STACK_PROJECT_ID="your_stack_project_id"
+NEXT_PUBLIC_STACK_PUBLISHABLE_CLIENT_KEY="your_publishable_key"
+STACK_SECRET_SERVER_KEY="your_secret_key"
+```
+
+2. Set up your database:
+
+```bash
+npx prisma migrate dev
+npx prisma generate
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your app will be available at: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🖼️ Screenshots
 
-## Learn More
+> 📸 Add screenshots of your Dashboard, Inventory Management, Add Product form, and Analytics charts here to showcase the application.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ☁️ Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Deploy on Vercel
 
-## Deploy on Vercel
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Import your repository
+4. Add your environment variables in the Vercel dashboard
+5. Click **Deploy**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Your live application will be hosted on a custom subdomain (e.g. https://your-inventory-app.vercel.app)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Database Setup
+
+For production, consider using:
+
+- [Neon](https://neon.tech/) - Serverless PostgreSQL
+- [Supabase](https://supabase.com/) - Open source Firebase alternative
+- [PlanetScale](https://planetscale.com/) - MySQL-compatible database
+
+---
+
+## 🎓 Course & Channel
+
+### Learn More with Pedro Technologies
+
+- 🌐 **Course Website**: [www.webdevultra.com](https://www.webdevultra.com)
+- 📺 **YouTube Channel**: [www.youtube.com/@pedrotechnologies](https://www.youtube.com/@pedrotechnologies)
+
+Follow along for more full-stack development tutorials, modern web technologies, and practical coding projects!
+
+---
+
+## 🔗 Useful Links
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Stack Auth Documentation](https://docs.stack-auth.com/)
+- [Prisma Documentation](https://www.prisma.io/docs)
+- [Tailwind CSS Docs](https://tailwindcss.com/docs)
+- [Lucide Icons](https://lucide.dev/)
+- [Recharts Documentation](https://recharts.org/)
+- [Vercel Deployment Guide](https://vercel.com/docs)
+
+---
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Happy Coding!** 🚀
+
+Let me know if you'd like me to generate a version with your actual GitHub repo, YouTube URL, or banner image suggestions!
