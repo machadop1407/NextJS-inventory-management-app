@@ -3,7 +3,7 @@
 <div align="center">
 <br />
 <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">
-<img src="./banner.png" alt="Inventory Management System Banner">
+<img width="1280" height="720" alt="Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of 10,000 REACT COMPONENTS (5)" src="https://github.com/user-attachments/assets/f208a5dc-a6b4-4a90-a3ef-93b9dbc23367" />
 </a>
 <br />
 <div>
